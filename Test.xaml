@@ -1,0 +1,177 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,1204" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="29">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="768,1139" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="ejecucionInmmediata" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="checked" DisplayName="Get Attribute 'UserArea  usr'" sap:VirtualizedContainerService.HintSize="726,202" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+      <ui:GetAttribute.Result>
+        <OutArgument x:TypeArguments="x:Boolean">[ejecucionInmmediata]</OutArgument>
+      </ui:GetAttribute.Result>
+      <ui:GetAttribute.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="28d9c83a-c105-4c6f-a8fe-b13d1f84c850" InformativeScreenshot="a4ad488c2815fe9827ff0604f9a5d2ff" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Planificar propuesta' idx='*' /&gt;&lt;sap text='Ejecución inmediata' type='GuiCheckBox' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetAttribute.Target>
+    </ui:GetAttribute>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="726,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[ejecucionInmmediata]" />
+    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Nom campo" sap:VirtualizedContainerService.HintSize="726,246" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+      <ui:AnchorBase.Action>
+        <ActivityAction x:TypeArguments="ui:Anchor">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+          </ActivityAction.Argument>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image ''" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACLSURBVDhP3ZHNCYQwFIRTbep4XYjnVJAyAjYgXt7FEiRh/RmjuLtxTYSHtx2Yy7x8ZGAUDi2J3yplO1Q6ljJljIHUn3oSKe89pH4OuVpD63uT5etPYZyP5ldNXf0AspSvkbpqX78QoRn2LKuhob+EyPYIocf2VgBxnIPBzoHjLALou2WE8tukPkMeKzxfPldrMAR0AAAAAElFTkSuQmCC" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="af4fe8cd-8667-493f-ac48-20320672c7ae">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+        </ActivityAction>
+      </ui:AnchorBase.Action>
+      <ui:AnchorBase.AnchorProvider>
+        <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element 'Nom campo'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitActive="False" WaitVisible="False">
+          <ui:WaitUiElementAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f69bd18d-53ec-411b-95cb-0a3aa5223f25" InformativeScreenshot="54e54c3d110b9fc6f0ec04efdd663df9" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Pagos automáticos: Selección libre' /&gt;&lt;sap text='Nom.campo' type='GuiLabel' idx='4' /&gt;" WaitForReady="NONE">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+            </ui:Target>
+          </ui:WaitUiElementAppear.Target>
+        </ui:WaitUiElementAppear>
+      </ui:AnchorBase.AnchorProvider>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AnchorBase>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="726,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[Today.AddMonths(1).AddDays(-(Today.Day)).ToString(&quot;ddMMyyyy&quot;)]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SAP\OpenSAP.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="726,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SAP\OpenSAP.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Client">100</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_UserName">RPA_02</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Password">Abc_1001</InArgument>
+        <InArgument x:TypeArguments="ss:SecureString" x:Key="in_SecurePassword" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_Language">ES</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_TransactionCode">F110</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_PathSAP">C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ConnectionName">02 SAP FI Integracion</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SAP\RealizarRemesa-F110.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="726,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="SAP\RealizarRemesa-F110.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_DiaEjecucionRemesa">[Today.AddDays(2).ToString("ddMMyyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_FechaContabilizacion">[Today.AddDays(2).ToString("ddMMyyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_DocCreadosHasta">[Today.AddDays(2).ToString("ddMMyyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_PosDeudorVencen">[Today.AddMonths(6).ToString("ddMMyyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Sociedades">C036,C277,C302</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_SigFeCont">[Today.AddDays(3).ToString("ddMMyyyy")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ClientesDesde">[String.Empty]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ClientesHasta">[String.Empty]</InArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_AcreedoresDesde">[{"999999"}]</InArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_AcreedoresHasta">[{"Z"}]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_IdentificadorRemesa">["BM"+now.ToString("mss")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ViaPago">M</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ViasPagoSociedades">M</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Referencia">[String.Empty]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_FechaReferencia">["(20000101,"+Today.AddDays(2).ToString("yyyyMMdd")+")"]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ClaseDocumento">-PZ,CT,ZW,PD</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>
